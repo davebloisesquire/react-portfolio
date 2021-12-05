@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
-import FAQs from './pages/FAQ';
+import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 // Main Function
@@ -21,8 +21,8 @@ export default function Main() {
         if (currentPage === 'About') {
             return <About /> ;
         }
-        if (currentPage === 'FAQs') {
-            return <FAQs /> ;
+        if (currentPage === 'Resume') {
+            return <Resume /> ;
         }
         if (currentPage === 'Portfolio') {
             return <Portfolio /> ;

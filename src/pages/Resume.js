@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function FAQs() {
+export default function Resume() {
   return (
     <div>
-      FAQs
+      Resume
     </div>
   );
 }
