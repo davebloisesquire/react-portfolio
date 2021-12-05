@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
+// Components
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+// Pages
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
-import FAQs from './pages/FAQ'
+import FAQs from './pages/FAQ';
+import Contact from './pages/Contact';
 
-
+// Main Function
 export default function Main() {
     const [currentPage, setCurrentPage] = useState('Home');
 
@@ -22,15 +27,19 @@ export default function Main() {
         if (currentPage === 'Portfolio') {
             return <Portfolio /> ;
         }
+        if (currentPage === 'Contact') {
+            return <Contact /> ;
+        }
         return <Portfolio /> ;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
 
-    return ( <
-        div >
-        <Navbar currentPage = { currentPage } handlePageChange = { handlePageChange }/>
+    return (
+      <div>
+        <Header currentPage = { currentPage } handlePageChange = { handlePageChange }/>
          { renderPage() }
+         <Footer />
         </div>
     );
 }
