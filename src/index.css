@@ -12,3 +12,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-content {
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+
+.project-card {
+  background: white;
+  padding: 2rem;
+  border-radius: .25rem;
+  box-shadow: .25rem .25rem .5rem grey;
+  margin: 2rem;
+}
+
+.project-card img {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.header {
+  background: lightgrey;
+  text-align: center;
+}
+
+.header h1 {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav .nav-item {
+  min-width: 200px;
+  padding: .5rem;
+}
+
+.nav .nav-item .nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav .nav-link.active {
+  text-decoration: underline;
+}
+
+.footer {
+  background: lightgrey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+  padding-top: 1rem;
+}
