@@ -38,7 +38,9 @@ export default function Main() {
     return (
       <div>
         <Header currentPage = { currentPage } handlePageChange = { handlePageChange }/>
+        <div className="main-content">
          { renderPage() }
+         </div>
          <Footer />
         </div>
     );

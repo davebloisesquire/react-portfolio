@@ -4,7 +4,7 @@ import Project from '../components/Project';
 export default function Portfolio() {
   return (
     <div>
-      Portfolio
+      <h2>Portfolio</h2>
       <Project
         title="Workout Tracker"
         body="A little tracker app for making sure you can easily quantize your workouts. It uses MongoDB with Mongoose."
