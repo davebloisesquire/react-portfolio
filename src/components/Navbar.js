@@ -2,8 +2,8 @@ import React from 'react';
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
+    <div className="nav nav-tabs">
+      <div className="nav-item">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -11,8 +11,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Home
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -20,8 +20,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           About Us
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -29,8 +29,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Portfolio
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -38,8 +38,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Resume
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="nav-item">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -47,8 +47,8 @@ function Navbar({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   );
 }
 

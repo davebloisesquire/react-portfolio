@@ -3,8 +3,8 @@ import Navbar from './Navbar';
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <div>
-      <h1>Header</h1>
+    <div className="header">
+      <h1>Dave Blois Esq</h1>
       <Navbar currentPage = { currentPage } handlePageChange = { handlePageChange }/>
     </div>
   )
